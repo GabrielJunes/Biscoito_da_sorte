@@ -1,0 +1,139 @@
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #06009f, #b902fb);
+	animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+}
+
+
+main {
+    background: #FFFFFF;
+    width: min(42.8rem, 90%);
+    height: 48.4rem;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+
+h1,h2 {
+    font-size: 2.4rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2.9rem;
+    color: #34355B;
+    margin-bottom: 1.4rem;
+}
+
+
+.screen1 {
+    padding: 4.8rem 6.4rem;
+}
+
+.screen1 button {
+    background-color: #FFFFFF;
+}
+
+.screen1 p {
+    font-family: "DM Sans" , sans-serif;
+    font-size: 1.5rem;
+    color: hsla(238, 27%, 28%, 1);
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+
+.screen1 button {
+    border: none;
+    cursor: pointer;
+}
+
+#btnTry:hover {
+    animation: shake 0.1s;
+    animation-iteration-count: infinite;
+  }
+  
+  .screen2 {
+      padding: 4.8rem 6.4rem 0rem 6.4rem;
+  }
+  
+  .screen2 button {
+      width: 17rem;
+      height: 5.2rem;
+      margin-top: 1.7rem;
+      background-color: #ff9500;
+      font-family: "DM SANS";
+      font-size: 1.5rem;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 0.4rem;
+      cursor: pointer;
+  }
+  
+  .screen2 p {
+      margin-bottom: 6rem;
+      font-family: 'Dancing script';
+      color: #000000;
+      font-weight: 400;
+      font-size: 2.4rem;
+      line-height: 2.8rem;
+      background-color: hsla(198, 32%, 92%, 1);
+      box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+      gap: 1rem;
+      animation: downtop 900ms;
+  }
+
+@keyframes shake {
+    0% {margin-left: 0;
+        margin-top:0}
+    25% {margin-left: 5px;
+        margin: top 2px;}
+    50% {margin-left: 0;
+        margin-top:0}
+    75% {margin-left: -5px;
+        margin-top:-2px}
+    100% {margin-left: 0;
+         margin-top:0}
+  }
+
+@keyframes downtop {
+    0% {
+        opacity: 0;
+        scale: 0;
+        transform: translateY(70rem);
+    }
+    50% {
+        opacity: 1;   
+    }
+    100% {
+        scale: 1;
+        transform: translateY(0);
+    }
+ }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
